@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 import { CheckCircle, Users, Award, TrendingUp } from "lucide-react";
 import heroDashboard from "@/assets/hero-dashboard.jpg";
 
@@ -32,9 +33,11 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-              <Button size="lg" className="text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
-                Start Free Trial
-              </Button>
+              <Link to="/signup">
+                <Button size="lg" className="text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                  Start Free Trial
+                </Button>
+              </Link>
               <Button size="lg" variant="outline" className="text-lg px-8 py-6 rounded-xl">
                 View Demo Dashboard
               </Button>
